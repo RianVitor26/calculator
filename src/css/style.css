@@ -16,8 +16,8 @@
 .display-container {
     text-shadow: 1px 1px 2px rgba(0, 0, 0, .2);
     font-size: 1.3rem;
-    letter-spacing: .75rem;
-    color: white;
+    letter-spacing: .1rem;
+    color: var(--text);
     text-align: right;
     line-height: 30px;
     width: 95%;
