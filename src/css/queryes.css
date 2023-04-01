@@ -1,0 +1,42 @@
+@media only screen and (max-width: 427px) {
+
+    .calculator-container {
+        height: 35rem;
+    }
+
+    .buttons-container {
+        width: 27rem;
+        height: 24rem;
+        align-self: flex-end;
+        margin: 1rem;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(5, 20%);
+    }
+
+    .button {
+        text-align: center;
+        width: 6rem;
+        height: 3.5rem;
+    }
+
+    .operator {
+        grid-row: 1/2;
+    }
+
+    .clear {
+        grid-column: 4;
+        grid-row: 2/4;
+        height: 8rem;
+    }
+
+    .equal {
+        grid-column: 4;
+        grid-row: 4/6;
+        height: 8rem;
+    }
+
+    .button0 {
+        grid-column: 1/3;
+        width: 12.5rem;
+    }
+}

@@ -1,0 +1,117 @@
+@import './animation.css';
+
+.calculator-container {
+    max-width: 36.5rem;
+    height: 30rem;
+    padding: .5rem 1rem;
+    display: flex;
+    flex-direction: column;
+    background: var(--calc-bg);
+    border-radius: 1.5rem;
+    box-shadow: 0 1rem 1rem rgb(116, 116, 116);
+    animation: calculator_animation 1s ease-in-out;
+}
+
+
+.display-container {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, .2);
+    font-size: 1.3rem;
+    letter-spacing: .75rem;
+    color: white;
+    text-align: right;
+    line-height: 30px;
+    width: 95%;
+    height: 5rem;
+    margin: 1.5rem auto;
+    padding: 1rem;
+    background: var(--display-bg);
+    box-shadow: inset 0px 4px rgba(0, 0, 0, .3);
+    border-radius: .5rem;
+}
+
+.buttons-container {
+    width: 32.5rem;
+    height: 18rem;
+    align-self: flex-end;
+    justify-content: space-between;
+    margin: 10px;
+    display: grid;
+    grid-template-columns: repeat(5, 60px);
+    grid-template-rows: repeat(4, 25%);
+}
+
+.button {
+    color: var(--text);
+    text-align: center;
+    width: 6rem;
+    height: 3.5rem;
+    cursor: pointer;
+    background: var(--num-bg);
+    border-radius: 3px;
+    padding: 1rem;
+    box-shadow: 0 4px rgba(0, 0, 0, .3);
+    user-select: none;
+    transition: all .2s ease;
+}
+
+.button:hover {
+    background: var(--num-bg-hover);
+    box-shadow: 0 .4rem var(--num-bg-border);
+    color: var(--text);
+}
+
+.button0 {
+    grid-column: 1/3;
+    width: 12.5rem;
+}
+
+.operator {
+    background: var(--operators);
+    color: var(--text);
+    box-shadow: 0 .4rem var(--operators-bg-border);
+}
+
+.operator:hover {
+    background: var(--operators-hover);
+}
+
+.clear {
+    height: 80px;
+    grid-column: 5;
+    grid-row: 1/3;
+    background: var(--clear-bg);
+    box-shadow: 0 .4rem var(--clear-bg-border);
+    color: var(--text);
+    line-height: 60px;
+    font-size: 1.2rem;
+}
+
+.clear:hover {
+    background: var(--clear-bg-hover);
+    box-shadow: 0 .4rem var(--clear-bg-border);
+}
+
+.equal {
+    height: 8rem;
+    grid-column: 5;
+    grid-row: 3/5;
+    background: var(--equal-bg);
+    box-shadow: 0 .4rem var(--equal-bg-border);
+    color: var(--text);
+    line-height: 60px;
+    font-size: 1.3rem;
+}
+
+.equal:hover {
+    background: var(--equal-bg-hover);
+    box-shadow: 0 .4rem var(var(--equal-bg-border));
+}
+
+.button:active {
+    box-shadow: 0 0 var(--plus-border-color);
+    transform: translateY(.4rem);
+}
+
+
+
+

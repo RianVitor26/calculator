@@ -1,0 +1,33 @@
+:root {
+    --calc-bg: linear-gradient(to right, #f5f5f5, #dddddd);
+    --display-bg: #d3d3d3;
+    --num-bg: white;
+    --num-bg-hover: rgb(224, 224, 224);
+    --num-bg-border: rgb(175, 175, 175);
+    --operators: #966aff;
+    --operators-hover: #834eff;
+    --operators-bg-border: #483f5f;
+    --equal-bg: #009c6d;
+    --equal-bg-hover: rgb(0, 212, 149);
+    --equal-bg-border: #006e4d;
+    --clear-bg: rgb(255, 103, 103);
+    --clear-bg-hover: rgb(255, 80, 80);
+    --clear-bg-border: rgb(187, 44, 44);
+    --display: rgb(216, 216, 216);
+    --text: rgb(66, 66, 66);
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../assets/office.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    place-items: center;
+}

@@ -1,0 +1,10 @@
+@keyframes calculator_animation {
+    from {
+        transform: scale(3) translate(-100%, 100%) rotate(-50deg);
+        box-shadow: 0 0 0 rgb(116, 116, 116);
+    }
+
+    to {
+        transform: scale(1) translate(0, 0);
+    }
+}
