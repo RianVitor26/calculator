@@ -14,7 +14,7 @@ buttons.forEach(button => {
 
 function insertValueOnDisplay(value) {
     verifyValues(value)
-    if (value === 'C') {
+    if (value === 'C' || value === '=') {
         return
     }
     display.innerHTML += value
@@ -25,8 +25,21 @@ function verifyValues(value) {
         case 'C':
             clearDisplay()
             break;
-        case '': 
-
+        case '=':
+            calculateAccount()
+            break;
+        case '+':
+            add()
+            break;
+        case '-':
+            subtract()
+            break;
+        case 'x':
+            multiply()
+            break;
+        case '/':
+            divide()
+            break;
         default:
             break;
     }
@@ -35,4 +48,20 @@ function verifyValues(value) {
 
 function clearDisplay() {
     display.innerHTML = ''
+}
+
+function calculateAccount() {
+    console.log('calcular')
+}
+function add() {
+    console.log('add')
+}
+function subtract() {
+    console.log('subtrair')
+}
+function multiply() {
+    console.log('multiplicar')
+}
+function divide() {
+    console.log('dividir')
 }
