@@ -11,7 +11,7 @@ buttons.forEach(button => {
 function insertValueOnDisplay(clickedButtonValue) {
 
     let lastElementTyped = display.innerHTML[display.innerHTML.length - 1]
-    let operators = ['*', '/']
+    let operators = ['*', '/', '+', '.']
     console.log(lastElementTyped)
 
     if (display.innerHTML.length === 0 && operators.includes(clickedButtonValue) ) {
@@ -19,13 +19,13 @@ function insertValueOnDisplay(clickedButtonValue) {
     }
    
 
-    if (clickedButtonValue === 'DEL') {
+    if (clickedButtonValue === 'Del') {
         deleteLastElement()
         return
      }
 
-    if (clickedButtonValue === 'X') {
-         display.innerHTML += clickedButtonValue.replace('X', '*')
+    if (clickedButtonValue === 'x') {
+         display.innerHTML += clickedButtonValue.replace('x', '*')
         return
     }
 
@@ -39,7 +39,7 @@ function insertValueOnDisplay(clickedButtonValue) {
         return
     }
 
-    if (lastElementTyped && !Number(lastElementTyped) && !Number(clickedButtonValue)) {
+    if (lastElementTyped && !Number(lastElementTyped) && !Number(clickedButtonValue) && lastElementTyped  != 0 && clickedButtonValue != 0) {
         deleteLastElement()
     }
 
