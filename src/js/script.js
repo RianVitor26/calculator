@@ -30,7 +30,6 @@ function insertValueOnDisplay(clickedButtonValue) {
         calculateResult()
         return
     }
-    
 
     display.innerHTML += clickedButtonValue
 }
@@ -41,7 +40,7 @@ function clearDisplay() {
 }
 
 function deleteLastElement() {
-     display.innerHTML = display.innerHTML.split(0, -1)
+     display.innerHTML = display.innerHTML.slice(0, -1)
 }
 
 function calculateResult() {
