@@ -11,6 +11,11 @@ buttons.forEach(button => {
 function insertValueOnDisplay(clickedButtonValue) {
     console.log(clickedButtonValue)
 
+    if (clickedButtonValue === 'DEL') {
+        deleteLastElement()
+        return
+     }
+
     if (clickedButtonValue === 'x') {
          display.innerHTML += clickedButtonValue.replace('x', '*')
         return
@@ -25,10 +30,7 @@ function insertValueOnDisplay(clickedButtonValue) {
         calculateResult()
         return
     }
-    if (clickedButtonValue === 'DEL') {
-       deleteLastElement() 
-       return
-    }
+    
 
     display.innerHTML += clickedButtonValue
 }
@@ -39,7 +41,7 @@ function clearDisplay() {
 }
 
 function deleteLastElement() {
-    display.innerHTML = display.innerHTML.split(0, -1)
+     display.innerHTML = display.innerHTML.split(0, -1)
 }
 
 function calculateResult() {
