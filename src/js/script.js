@@ -25,6 +25,10 @@ function insertValueOnDisplay(clickedButtonValue) {
         calculateResult()
         return
     }
+    if (clickedButtonValue === 'DEL') {
+       deleteLastElement() 
+       return
+    }
 
     display.innerHTML += clickedButtonValue
 }

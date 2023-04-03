@@ -10,23 +10,25 @@
     border-radius: 1.5rem;
     box-shadow: 0 1rem 1rem rgb(116, 116, 116);
     animation: calculator_animation 1s ease-in-out;
+    user-select: none;
 }
 
 
 .display-container {
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, .2);
-    font-size: 1.3rem;
+  
+    font-size: 1.5rem;
     letter-spacing: .1rem;
     color: var(--text);
     text-align: right;
-    line-height: 30px;
+    line-height: 3rem;
     width: 95%;
-    height: 5rem;
+    height: 6rem;
     margin: 1.5rem auto;
     padding: 1rem;
     background: var(--display-bg);
     box-shadow: inset 0px 4px rgba(0, 0, 0, .3);
     border-radius: .5rem;
+    overflow-x: auto;
 }
 
 .buttons-container {
@@ -50,7 +52,6 @@
     border-radius: 3px;
     padding: 1rem;
     box-shadow: 0 4px rgba(0, 0, 0, .3);
-    user-select: none;
     transition: all .2s ease;
 }
 
@@ -62,7 +63,8 @@
 
 .button0 {
     grid-column: 1/3;
-    width: 12.5rem;
+    width: 100%;
+   
 }
 
 .operator {
@@ -76,13 +78,11 @@
 }
 
 .clear {
-    height: 80px;
     grid-column: 5;
-    grid-row: 1/3;
+    grid-row: 1/2;
     background: var(--clear-bg);
     box-shadow: 0 .4rem var(--clear-bg-border);
     color: var(--text);
-    line-height: 60px;
     font-size: 1.2rem;
 }
 
@@ -112,6 +112,14 @@
     transform: translateY(.4rem);
 }
 
+.del{
+    grid-column: 5;
+    grid-row: 2/3;
+    background: var(--clear-bg);
+    box-shadow: 0 .4rem var(--clear-bg-border);
+    color: var(--text);
+    font-size: 1.2rem;
+}
 
 
 

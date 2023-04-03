@@ -25,8 +25,12 @@
 
     .clear {
         grid-column: 4;
-        grid-row: 2/4;
-        height: 8rem;
+        grid-row: 2/3;
+    }
+    .del{
+        grid-column: 4;
+        grid-row: 3/4;
+        
     }
 
     .equal {

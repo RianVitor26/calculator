@@ -1,6 +1,6 @@
 :root {
     --calc-bg: linear-gradient(to right, #f5f5f5, #dddddd);
-    --display-bg: #d3d3d3;
+    --display-bg: #00000063;
     --num-bg: white;
     --num-bg-hover: rgb(224, 224, 224);
     --num-bg-border: rgb(175, 175, 175);
