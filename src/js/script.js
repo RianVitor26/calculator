@@ -11,13 +11,8 @@ buttons.forEach(button => {
 function insertValueOnDisplay(clickedButtonValue) {
     console.log(clickedButtonValue)
 
-    if (clickedButtonValue === '.') {
-        deleteLastElement()
-        return
-    }
-
     if (clickedButtonValue === 'x') {
-        display.innerHTML += clickedButtonValue.replace('x', '*')
+         display.innerHTML += clickedButtonValue.replace('x', '*')
         return
     }
 
@@ -40,14 +35,14 @@ function clearDisplay() {
 }
 
 function deleteLastElement() {
-    display.innerHTML = display.innerHTML.split(0, 1)
+    display.innerHTML = display.innerHTML.split(0, -1)
 }
 
 function calculateResult() {
     try {
         display.innerHTML = eval(display.innerHTML)
     } catch (error) {
-        display.innerHTML = 'error'
+        display.innerHTML = ''
         console.log(error)
     }
 }
