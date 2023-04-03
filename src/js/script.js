@@ -9,7 +9,10 @@ buttons.forEach(button => {
 })
 
 function insertValueOnDisplay(clickedButtonValue) {
-    console.log(clickedButtonValue)
+
+    let lastElementTyped = display.innerHTML[display.innerHTML.length - 1]
+    console.log(lastElementTyped)
+   
 
     if (clickedButtonValue === 'DEL') {
         deleteLastElement()
@@ -29,6 +32,10 @@ function insertValueOnDisplay(clickedButtonValue) {
     if (clickedButtonValue === '=') {
         calculateResult()
         return
+    }
+
+    if (lastElementTyped && !Number(lastElementTyped) && !Number(clickedButtonValue)) {
+        deleteLastElement()
     }
 
     display.innerHTML += clickedButtonValue
