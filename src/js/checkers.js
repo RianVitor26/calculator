@@ -44,8 +44,8 @@ export function verifyDuplicateOperators(clickedButtonValue) {
     const lastElementOnDisplay = display.innerHTML[display.innerHTML.length - 1]
     const isLastElementNotNumber = !Number(lastElementOnDisplay);
     const isClickedButtonNotNumber = !Number(clickedButtonValue);
-    const isLastElementNotZero = lastElementOnDisplay !== 0;
-    const isClickedButtonNotZero = clickedButtonValue !== 0;
+    const isLastElementNotZero = lastElementOnDisplay != 0;
+    const isClickedButtonNotZero = clickedButtonValue != 0;
 
     if (isLastElementNotNumber && isClickedButtonNotNumber && isLastElementNotZero && isClickedButtonNotZero) {
         deleteLastElementOnDisplay();
